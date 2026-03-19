@@ -5,7 +5,7 @@
 
 body {
     height: 100vh;
-    background: rgb(157, 24, 24);
+    background: rgb(72, 71, 71);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -49,39 +49,57 @@ body {
     height: auto;
     gap: 40px;
     order:2;
+}
 
-    }
+.apresentacao-conteudo-titulo {
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
 
-    .apresentacao-conteudo-titulo {
-        font-size: 36px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        text-align: justify;
-    }
+.apresentacao-conteudo-paragrafo {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
 
-    .apresentacao-conteudo-paragrafo { 
-        font-size: 24px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: justify;
-    }
-
-    .botao1{
-        background-color: #000;
-        color: #f55000;
-        width: 500px;
-        height: 80px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid #ff5500;
-        border-radius: 50px;
-        font-size: 36px;
-        padding: 15px 0;
-        text-decoration: none;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        position: relative;
-        overflow: hidden;
-    }
-
+.botao1{
+    background-color: #000;
+    color: #f906fd;
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f906fd;
+    border-radius: 50px;
+    font-size: 36px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+.botao1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,transparent,#f906fd);
+    transition: 0.5s;
+}
+.botao1:hover::before{
+    left:100%;
+}
+.botao1 i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
